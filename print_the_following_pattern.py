@@ -1,5 +1,8 @@
 n=int(input())
-for i in range(n+1,1,-1):
-    for j in range(1,i):
-        print(j,end="")
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            print("0",end="")
+        else:
+            print("x",end="")
     print()
