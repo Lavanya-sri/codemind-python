@@ -1,14 +1,8 @@
-num=int(input())  
-square=num*num    
-flag=0   
-while(num>0):   
-    if(num%10!=square%10):  
-        print("Not an Automorphic Number")
-        flag=1  
-        break                       
-       
-    num=num//10                        
-    square=square//10   
-  
-if(flag==0):  
-    print("Automorphic Number")
+num = int(input())  
+x=len(str(num))  
+square = num**2  
+last_digits = square%pow(10,x)  
+if last_digits == num:  
+  print("Automorphic Number")  
+else:  
+  print("Not an Automorphic Number") 
