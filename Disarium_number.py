@@ -1,16 +1,14 @@
 n=input()
-len_n=len(n)
+l=len(n)
 n=int(n)
 x=n
-i=len_n
-add=0
-while n!=0:
+sum=0
+while(n):
     r=n%10
-    add=add+(r**i)
+    sum=sum+pow(r,l)
+    l=l-1
     n=n//10
-    i=i-1
-if add==x:
+if x==sum:
     print("True")
 else:
     print("False")
-    
