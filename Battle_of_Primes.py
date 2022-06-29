@@ -1,18 +1,15 @@
 def prime(n):
-    c=0
-    for i in range(1,n+1):
+    count=0
+    for i in range(2,n):
         if n%i==0:
-            c+=1
-    if c==2:
+            count=1
+            return False
+    if count==0:
         return True
-    else:
-        return False
-
-n1=int(input())
-n2=int(input())
-x=n1+n2
-for i in range(x+1,100000):
-    if prime(i):
-        y=i
+a=int(input())
+b=int(input())
+for i in range(1,100):
+    c=a+b+i
+    if prime(c):
+        print(i)
         break
-print(y-x)
