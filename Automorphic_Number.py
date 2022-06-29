@@ -1,8 +1,13 @@
-num = int(input())  
-x=len(str(num))  
-square = num**2  
-last_digits = square%pow(10,x)  
-if last_digits == num:  
-  print("Automorphic Number")  
-else:  
-  print("Not an Automorphic Number") 
+n=int(input())
+temp=n
+c=0
+while n!=0:
+    n=n//10
+    c+=1
+n=temp*temp
+n=n%pow(10,c)
+if temp==n:
+    print("Automorphic Number")
+else:
+    print("Not an Automorphic Number")
+
