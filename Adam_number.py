@@ -1,19 +1,20 @@
 n=int(input())
+sqr=n*n
+temp=n
+s=0
 r=0
-x=n*n
-add=0
-while n>0:
-    r=n%10
-    add=add*10+r
-    n=n//10
-count=0
-b=0
-a=add*add
-while a>0:
-    b=a%10
-    count=count*10+b
-    a=a//10
-if x==count:
+prod=0
+sum=0
+while temp>0:
+    r=temp%10
+    sum=sum*10+r
+    temp=temp//10
+s=sum*sum
+while s>0:
+    r=s%10
+    prod=prod*10+r
+    s=s//10
+if sqr==prod:
     print("True")
 else:
     print("False")
