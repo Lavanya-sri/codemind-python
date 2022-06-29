@@ -1,16 +1,15 @@
 n=int(input())
-a=0
-b=1
-c=0
-i=0
-while True:
-    c=a+b
-    a,b=b,c
-    i+=1
-    if c==n:
-        print("True")
-        break
-    else:
-        if c>n:
-            print("False")
-            break
+n1=0
+n2=1
+n3=0
+count=0
+for i in range(2,n):
+    n3=n1+n2
+    if n3==n:
+        count+=1
+    n1=n2
+    n2=n3
+if count>0:
+    print("True")
+else:
+    print("False")
