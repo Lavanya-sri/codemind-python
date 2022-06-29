@@ -1,8 +1,9 @@
 n=int(input())
-while(n>=10):
-    temp=0
-    while(n>0):
-        temp=temp+n%10
+while n//10!=0:
+    sum=0
+    while n>0:
+        r=n%10
+        sum=sum+r
         n=n//10
-    n=temp
-print(n)
+    n=sum
+print(sum)
