@@ -1,8 +1,8 @@
-def gcd_fun(x,y):
-    if(y==0):
-        return x
-    else:
-        return gcd_fun(y,x%y)
-x,y=map(int,input().split())
-num=gcd_fun(x,y)
-print(num)
+a,b=map(int,input().split())
+gcd=0
+i=1
+while i<=a and i<=b:
+    if a%i==0 and b%i==0:
+        gcd=i
+    i=i+1
+print(gcd)
