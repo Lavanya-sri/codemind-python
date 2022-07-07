@@ -1,10 +1,6 @@
-n=input()
-x=n.split()
-count=0
-for word in x:
-    for char in word:
-        if char==" ":
-            continue
-        else:
-            count=count+1
-print(count)
+s=input()
+c=0
+for char in s:
+    if char!=" ":
+        c+=1
+print(c)
