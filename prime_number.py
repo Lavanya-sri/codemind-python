@@ -1,9 +1,7 @@
 n=int(input())
-count=0
-for i in range(2,n-1):
+for i in range(2,n):
     if n%i==0:
-        count+=1
-if count==0:
-    print("prime")
+        print("not a prime")
+        break
 else:
-    print("not a prime")
+        print("prime")
