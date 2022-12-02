@@ -5,6 +5,7 @@ def prime(n):
         if n%i==0:
             return False
     return True
+
 n=int(input())
 temp=n
 left=0
@@ -23,5 +24,6 @@ c=temp-left
 d=right-temp
 if c<d:
     print(c)
-else:
+elif d<=c:
     print(d)
+    
