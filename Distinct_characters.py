@@ -1,6 +1,6 @@
 s=input().lower()
+a=""
 s=s.replace(" ","")
-a=''
 for i in set(s):
     if s.count(i)==1:
         a+=i
